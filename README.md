@@ -31,8 +31,8 @@ Create a .env file in the root directly, example below.
 
 ```
 HOST = example.com
-USER = admin
-PASSWORD = 123456
+DB_USER = admin
+DB_PASSWORD = 123456
 DATABASE = test
 GOOGLE_FOLDER_ID = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
