@@ -48,3 +48,12 @@ https://drive.google.com/drive/u/1/folders/[ID IS HERE]
 ```
 node app.js
 ```
+
+# PM2 setup
+
+Example command to run every day at 1am.
+
+```
+pm2 start app.js --name mysql-backup --cron "0 1 * * *"
+pm2 save
+```
