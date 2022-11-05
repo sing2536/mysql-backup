@@ -22,7 +22,7 @@ Feel free to contribute.
 ## Share Google Drive folder to API
 
 1. Go to [Google Drive.](https://drive.google.com)
-2. Select/Create a folder and right click on it and select share.
+2. Select/Create a folder, right click on it and select share.
 3. Grab the "client_email" from credentials.json, and share it to that email.
 
 ## Create a .env
@@ -37,7 +37,7 @@ DATABASE = test
 GOOGLE_FOLDER_ID = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-To get the Google folder ID, simply go to Google Drive online, go in to the folder and grab it from the URL, example below.
+To get the Google folder ID, go to Google Drive online, then open the folder that you shared and grab the id from the URL, example below.
 
 ```
 https://drive.google.com/drive/u/1/folders/[ID IS HERE]
