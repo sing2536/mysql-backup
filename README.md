@@ -49,11 +49,17 @@ https://drive.google.com/drive/u/1/folders/[ID IS HERE]
 node app.js
 ```
 
-# PM2 setup
+# Scheduling script
 
-Example command to run every day at 1am.
+Example Cron job to run every day at 1am.
+
 
 ```
-pm2 start app.js --name mysql-backup --cron "0 1 * * *"
-pm2 save
+crontab -e
+```
+
+Use "which node" command to get path to node and then add line below and save.
+
+```
+0 1 * * * cd /bin/scripts/mysql-backup/ && /usr/local/bin/node app.js
 ```
